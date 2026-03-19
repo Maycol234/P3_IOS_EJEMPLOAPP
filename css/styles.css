@@ -18,13 +18,13 @@ body {
   width: 100%;
   max-width: 390px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .header {
-  background: linear-gradient(135deg, #f77e5f, #feb47b);
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   color: white;
   text-align: center;
   padding: 20px;
@@ -36,112 +36,31 @@ body {
 
 .header p {
   margin-top: 5px;
-  font-size: 0.95rem;
+  font-size: 00.95rem;
 }
 
 .perfil {
-  background: #ffffff;
+  background: #fff4ef;
   text-align: center;
   padding: 15px;
 }
+border-bottom: 1px solid #eee;
 
-
-@media (max-width: 480px) {
-  .perfil {
-    border-bottom: 1px solid #eee;
-  }
-
-  .perfil h2 {
-    color: #ff7e5f;
-    margin-bottom: 5px;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    gap: 10px;
-  }
-
-  .menu button {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 12px;
-    background: #1dc8e8;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .menu button:hover {
-    background: #37c3e0;
-  }
-
-  main {
-    padding: 15px;
-  }
-
-  .seccion {
-    display: none;
-  }
-
-  .seccion.activa {
-    display: block;
-  }
-
-  .seccion h2 {
-  }
+.perfil h2 {
+  color: #ff7e5f;
+  margin-bottom: 5px;
 }
 
-
-.seccion.activa {
-}
-
-.seccion h2 {
-  margin-bottom: 12px;
-  color: #4e54c8;
-}
-
-.card {
-  background: #f7f7ff;
-  border-left: 6px solid #f7f5ef;
-  border-radius: 14px;
-  padding: 15px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 10px 0px rgba(0,0,0,0.08);
-}
-
-.card h3 {
-  color: #f7f5ef;
-  margin-bottom: 6px;
-}
-
-.card p {
-  color: #444;
-  line-height: 1.5;
-}
-
-.footer {
+.menu {
   display: flex;
   justify-content: space-around;
-  background: #4e54c8;
-  color: white;
   padding: 15px;
-  font-size: 1.4rem;
+  gap: 10px;
 }
 
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.5rem;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .menu button {
-    width: 100%;
-  }
-}
+.menu button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #4e54c8;
