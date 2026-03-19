@@ -100,8 +100,8 @@ main {
 }
 
 .card {
-  background: #f7f7ff;
-  border-left: 6px solid #f7f5ef;
+  background: #ffe6f0;              /* fondo rosado claro */
+  border-left: 6px solid #ff7e5f;   /* borde lateral rosa fuerte */
   border-radius: 14px;
   padding: 15px;
   margin-bottom: 12px;
@@ -109,7 +109,7 @@ main {
 }
 
 .card h3 {
-  color: #f7f5ef;
+  color: #ff7e5f;   /* título en rosa */
   margin-bottom: 6px;
 }
 
