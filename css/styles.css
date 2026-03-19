@@ -100,8 +100,8 @@ main {
 }
 
 .card {
-  background: #ffe6f0;              /* fondo rosado claro */
-  border-left: 6px solid #ff7e5f;   /* borde lateral rosa fuerte */
+  background: #f7f7ff;
+  border-left: 6px solid #4e54c8; /* morado por defecto */
   border-radius: 14px;
   padding: 15px;
   margin-bottom: 12px;
@@ -109,7 +109,7 @@ main {
 }
 
 .card h3 {
-  color: #ff7e5f;   /* título en rosa */
+  color: #4e54c8;
   margin-bottom: 6px;
 }
 
@@ -118,13 +118,23 @@ main {
   line-height: 1.5;
 }
 
+/* Estilo especial para la tarjeta de Horario */
+.card.horario {
+  background: #ffe6f0;              /* fondo rosado claro */
+  border-left: 6px solid #ff7e5f;   /* borde rosa fuerte */
+}
+
+.card.horario h3 {
+  color: #ff7e5f;                   /* título en rosa */
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
   background: #4e54c8;
   color: white;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem; /* íconos más grandes */
 }
 
 @media (max-width: 480px) {
