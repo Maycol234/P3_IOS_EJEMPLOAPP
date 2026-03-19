@@ -16,51 +16,30 @@ body {
 
 .app {
   width: 100%;
-  max-width: 390px;
+  max-width: 480px;   
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.header {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
 .header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;   
 }
 
 .header p {
-  margin-top: 5px;
-  font-size: 00.95rem;
+  font-size: 1.1rem; 
 }
-
-.perfil {
-  background: #fff4ef;
-  text-align: center;
-  padding: 15px;
-}
-border-bottom: 1px solid #eee;
 
 .perfil h2 {
-  color: #ff7e5f;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  gap: 10px;
+.perfil p {
+  font-size: 1rem;
 }
 
 .menu button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  background: #4e54c8;
+  font-size: 1rem;   
+  padding: 12px;    
+}
