@@ -10,25 +10,43 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* coloca la app arriba */
   padding: 20px;
 }
 
 .app {
   width: 100%;
-  max-width: 480px;   
+  max-width: 480px;   /* más ancho */
+  min-height: 100vh;  /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* footer siempre abajo */
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
+.header {
+  background: linear-gradient(135deg, #f77e5f, #feb47b);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 .header h1 {
-  font-size: 2rem;   
+  font-size: 2rem;
 }
 
 .header p {
-  font-size: 1.1rem; 
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.perfil {
+  background: #ffffff;
+  text-align: center;
+  padding: 15px;
 }
 
 .perfil h2 {
@@ -39,7 +57,86 @@ body {
   font-size: 1rem;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  gap: 10px;
+}
+
 .menu button {
-  font-size: 1rem;   
-  padding: 12px;    
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #1dc8e8;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #37c3e0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.seccion {
+  display: none;
+}
+
+.seccion.activa {
+  display: block;
+}
+
+.seccion h2 {
+  margin-bottom: 12px;
+  color: #4e54c8;
+}
+
+.card {
+  background: #f7f7ff;
+  border-left: 6px solid #f7f5ef;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #f7f5ef;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #4e54c8;
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu button {
+    width: 100%;
+  }
 }
